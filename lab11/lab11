@@ -1,0 +1,32 @@
+git add lab11
+git commit -a -m 'Lab1.1 submission'
+git push
+
+1. Have the program generate a random number of either 1 or two.
+2. Have the score set to a base of 10.
+3. Have the program prompt the user to guess a number.
+4. Have the user's guess stored to be evaluated.
+5. Have the computer evaluate whether it is higher/lower/equal.
+6. If the user's guess is equal say you are correct and have it add a point to the score tally and start the game again.
+7. If the user's guess is higher or lower have the computer tell the user if it is higher or lower and have the computer lower the score by one and let the user try again.
+
+X = randnum(1,2)
+Score = 10
+Print(“Guess what number I am thinking”)
+Y = input
+
+If X == Y:
+	Print(“You guess is correct! Let’s play again!”)
+	Score = Score + 1
+	Jmp0
+	
+If X>Y:
+	Print(“You guessed too low! Try again”)
+	Score = Score – 1 
+	Jmp2
+	
+If X<Y:
+	Print(“You guessed too high! Try again”)
+	Score = Score - 1
+	Jmp2
+	
