@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+/*  Kelsey Dimmick
+    08/29/2017
+    A program to calculate the future U.S. population
+    http://www.census.gov/popclock/
+*/
+
 int main ()
 {   // Calculations done for per year
 
