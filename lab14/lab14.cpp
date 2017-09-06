@@ -57,6 +57,8 @@ int main ()
     cout << nickelAmount << " nickels" << endl;
     cout << pennyAmount << " pennies" << endl;
     cout << "You will recieve a resulting in a cash amount of $" << static_cast<double>(coinAmount-feeCharge) << " after the service fee.";
+    
+    return 0;
 }
 
 /* 
