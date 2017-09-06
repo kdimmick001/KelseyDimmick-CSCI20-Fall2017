@@ -58,3 +58,39 @@ int main ()
     cout << pennyAmount << " pennies" << endl;
     cout << "You will recieve a resulting in a cash amount of $" << static_cast<double>(coinAmount-feeCharge) << " after the service fee.";
 }
+
+/* 
+Test 1: 105
+Please enter amount money: 105
+
+You you put in : 
+4 quarters
+0 dimes
+1 nickels
+0 pennies
+You will recieve a resulting in a cash amount of $93.555 after the service fee.
+*/
+
+/* 
+Test 2: 3459
+Please enter amount money: 3459
+
+You you put in : 
+138 quarters
+0 dimes
+1 nickels
+4 pennies
+You will recieve a resulting in a cash amount of $3081.97 after the service fee.
+*/
+
+/*
+Test 5: 987654321
+Please enter amount money: 987654321
+
+You you put in : 
+39506172 quarters
+2 dimes
+0 nickels
+1 pennies
+You will recieve a resulting in a cash amount of $8.8e+08 after the service fee.
+*/
