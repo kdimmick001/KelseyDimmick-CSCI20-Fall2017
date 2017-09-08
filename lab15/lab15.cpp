@@ -5,6 +5,7 @@ using namespace std;
 /*  Kelsey Dimmick
     09/07/2017
     A program to play MadLibs: Some Mathematical Rules.
+    https://i.pinimg.com/originals/89/1f/65/891f6547f214237b18b2da21c3e2935e.jpg
 */
 
 /*
