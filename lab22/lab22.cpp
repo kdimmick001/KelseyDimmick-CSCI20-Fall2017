@@ -12,13 +12,13 @@ using namespace std;
 int main () {
     //Declaring the variable to store the random number as well as the randome number seed.
     srand(time(0));
-    int numBetween; 
+    int num_between; 
     
     //To generate a random number between 1 and 100.
-    numBetween = ((rand() % 100) + 1);
+    num_between = ((rand() % 100) + 1);
     
     //Output of the randomly generated number between 1 and 100.
-    cout << "Your random number is " << numBetween << endl;
+    cout << "Your random number is " << num_between << endl;
     
     return 0;
 }
