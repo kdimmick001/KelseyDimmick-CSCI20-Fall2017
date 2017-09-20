@@ -10,30 +10,30 @@ using namespace std;
 
 int main (){
     //Declaring needed variables for the Wind Chill Formulas.
-    double oldWindChill = 0.0;
-    double newWindChill = 0.0;
-    double tempF = 0.0;
+    double old_wind_chill = 0.0;
+    double new_wind_chill = 0.0;
+    double temp_f = 0.0;
     double velocity = 0.0;
     double difference = 0.0;
 
     //Asking for user inputs to calculate the Formulas.
     cout << "Please enter the temperature in degrees Farenheit: ";
-    cin >> tempF;
+    cin >> temp_f;
     cout << endl << endl;
     cout << "Please enter the wind's velocity: ";
     cin >> velocity;
     cout << endl << endl;
         
     //Old Wind Chill formula and new Wind Chill Formula.
-    oldWindChill = 0.081 * (3.71 * sqrt(velocity) + 5.81 - (0.25 * velocity)) * (tempF - 9.14) + 91.4;
-    newWindChill = 35.74 + (0.6215 * tempF) - (35.75 * pow(velocity,0.16)) + (0.4275 * tempF) * (pow(velocity,0.16));
+    old_wind_chill = 0.081 * (3.71 * sqrt(velocity) + 5.81 - (0.25 * velocity)) * (temp_f - 9.14) + 91.4;
+    new_wind_chill = 35.74 + (0.6215 * temp_f) - (35.75 * pow(velocity,0.16)) + (0.4275 * temp_f) * (pow(velocity,0.16));
 
     //A function used to get the positive difference between two numbers being stored in the variable difference,
-    difference = fdim(oldWindChill, newWindChill);
+    difference = fdim(old_wind_chill, new_wind_chill);
     
     cout << "Wind Speed       Old Formula        New Formula        Difference" << endl;
     cout << "__________       ___________        ___________        __________" << endl <<endl;
-    cout << velocity << "              " << oldWindChill << "              " << newWindChill << "             " << difference << "          " << endl;
+    cout << velocity << "              " << old_wind_chill << "              " << new_wind_chill << "             " << difference << "          " << endl;
     
     return 0;
     
