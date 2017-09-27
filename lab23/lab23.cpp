@@ -28,14 +28,9 @@ void ValSwap(int& num_value1, int& num_value2){
 };
 
 //Random number generator function.
-void NumGenerator(int num_value1, int num_value2){
+void NumGenerator(int& num_value1, int& num_value2){
     
-    //Asks for user input and stores them in the two values needed for the function.
-    cout << "Please input a smaller integer value: ";
-    cin >> num_value1;
-    cout << endl << "Please input a larger integer value: ";
-    cin >> num_value2;
-    cout << endl;
+
     
     //Generates a random number from the given inputs.
     srand(time(0));
@@ -54,8 +49,21 @@ void NumGenerator(int num_value1, int num_value2){
 //Main function.
 int main() {
     
-    //Calls the NumGenerator function.
-    NumGenerator(0,0);
+    //Initializes the variables.
+    int num_value1 = 0;
+    int num_value2 = 0;
+    
+    //Asks for user input and stores them in the two values needed for the function.
+    cout << "Please input a smaller integer value: ";
+    cin >> num_value1;
+    cout << endl << "Please input a larger integer value: ";
+    cin >> num_value2;
+    cout << endl;
+    
+        
+    //Calls the NumGenerator function by using the inputted values.
+    NumGenerator(num_value1, num_value2);
+
     
     
     return 0;
