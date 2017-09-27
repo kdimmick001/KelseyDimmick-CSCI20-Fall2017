@@ -30,8 +30,6 @@ void ValSwap(int& num_value1, int& num_value2){
 //Random number generator function.
 void NumGenerator(int& num_value1, int& num_value2){
     
-
-    
     //Generates a random number from the given inputs.
     srand(time(0));
     
@@ -60,7 +58,6 @@ int main() {
     cin >> num_value2;
     cout << endl;
     
-        
     //Calls the NumGenerator function by using the inputted values.
     NumGenerator(num_value1, num_value2);
 
