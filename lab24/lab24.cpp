@@ -29,22 +29,20 @@ void ValSwap(int& num_value1, int& num_value2){
 };
 
 //Pounds to kilograms function.
-void PndToKilo(double pnd){
+double PndToKilo(double pnd){
     
     //Declaring and initializing a kilogram value.
     double kilo = 0.0;
     
     //Equation to convert pounds to kilograms.
     kilo = (2.2 * pnd);
-    
-    //Outputing the resulting kilogram value.
-    cout << pnd << " pounds is " << kilo << " in kilograms.";
 
-    return;
+    //Returns the value of kilograms.
+    return kilo;
 };
 
 //Kilograms to Pounds function.
-void KiloToPnd(double kilo) {
+double KiloToPnd(double kilo) {
     
     //Declaring and initializing a pound value.
     double pnd = 0.0;
@@ -52,26 +50,28 @@ void KiloToPnd(double kilo) {
     //Equation to convert kilograms to pounds.
     pnd = (kilo/2.2);
     
-    //Outputing the resulting pound value.
-    cout << kilo << " kilograms is " << pnd << " in pounds.";
-    
-    return;
+    //Returns the value of pounds
+    return pnd;
     
 };
 
 //Random number generator function.
-void NumGenerator(int& num_value1, int& num_value2){
-    
+int NumGenerator(int& num_value1, int& num_value2){
+     
     //Generates a random number from the given inputs.
     srand(time(0));
     
+    //Declares variable for the random number between the two values.
+    double rand_num = (((rand() % ((num_value2 - num_value1) +1) )) + num_value1);
+
     //Calls the ValSwap function.
     ValSwap(num_value1, num_value2);
     
-    //Output of a random number between the two inputed values with the random value equation in the output.
-    cout << "A random number between " << num_value2 << " and " << num_value1 << " is " << (((rand() % ((num_value1 - num_value2) +1) )) + num_value2) << endl;
-    
-    return;
+    //Output of a random number between the two inputed value.
+    cout << "A random number between " << num_value2 << " and " << num_value1 << " is " << rand_num << endl << endl;
+
+    //Returns the value of a rand_num.
+    return rand_num;
 };
 
 
@@ -82,9 +82,7 @@ int main() {
     //Initializes the variables.
     int num_value1 = 0;
     int num_value2 = 0;
-    double pnd_val = 0.0;
-    double kilo_val = 0.0;
-    
+
     //Asks for user input and stores them in the two values needed for the function.
     cout << "Please input a smaller integer value: ";
     cin >> num_value1;
@@ -92,26 +90,18 @@ int main() {
     cin >> num_value2;
     cout << endl;
     
-    //Calls the NumGenerator function by using the inputted values.
-    NumGenerator(num_value1, num_value2);
+    //Calls the NumGenerator function by using the inputted values and stores the obtained random number from the function in a variable.
+    double rand_num = NumGenerator(num_value1, num_value2);
     
-    //Input for Pound to Kilogram function.
-    cout<< endl << endl <<"Please input a pound value: ";
-    cin >> pnd_val;
-    cout << endl;
+        
+    //Calling the function with the argument of the rand_num to get an equally random kilogram value and storing that value into a variable.
+    double pounds = PndToKilo(rand_num);
     
-    //Call to Pound to Kilogram converter function.
-    PndToKilo(pnd_val);
-   
-    //Input for Kilogram to Pound function.
-    cout << endl << endl << "Please input a kilogram value: ";
-    cin >> kilo_val;
-    cout << endl;
+    //Calling the function with the argument of the pounds from the previous function to get a pound value from the kilogram value and store that value into a variable.
+    double kilos = PndToKilo(pounds);
     
-    //Call to Kilogram to Pound converter function.
-    KiloToPnd(kilo_val);
-
-    
+    //Outputs the value of kilograms and pounds obtained.
+    cout << kilos << " kilograms is " << pounds << " in pounds.";
     
     return 0;
 }
@@ -127,16 +117,9 @@ Your first entered value is: 5
 
 Your second entered value is: 10
 
-A random number between 5 and 10 is 8
+A random number between 5 and 10 is 7
 
-
-Please input a pound value: 8
-
-8 pounds is 17.6 in kilograms.
-
-Please input a kilogram value: 17.6
-
-17.6 kilograms is 8 in pounds.
+33.88 kilograms is 15.4 in pounds.
 
 
 TEST 2:
@@ -148,16 +131,9 @@ Your first entered value is: 20
 
 Your second entered value is: 500
 
-A random number between 20 and 500 is 42
+A random number between 20 and 500 is 250
 
-
-Please input a pound value: 500.2
-
-500.2 pounds is 1100.44 in kilograms.
-
-Please input a kilogram value: 1100.44
-
-1100.44 kilograms is 500.2 in pounds.
+1210 kilograms is 550 in pounds.
 
 
 TEST 3:
@@ -169,16 +145,9 @@ Your first entered value is: 0
 
 Your second entered value is: 100
 
-A random number between 0 and 100 is 69
+A random number between 0 and 100 is 58
 
-
-Please input a pound value: 0
-
-0 pounds is 0 in kilograms.
-
-Please input a kilogram value: 0
-
-0 kilograms is 0 in pounds.
+280.72 kilograms is 127.6 in pounds.
 
 
 TEST 4:
@@ -190,15 +159,22 @@ Your first entered value is: 60
 
 Your second entered value is: 65
 
-A random number between 60 and 65 is 64
+A random number between 60 and 65 is 61
+
+295.24 kilograms is 134.2 in pounds.
 
 
-Please input a pound value: 2.2
+TEST 5:
+Please input a smaller integer value: 500  
 
-2.2 pounds is 4.84 in kilograms.
+Please input a larger integer value: 5000
 
-Please input a kilogram value: 4.84
+Your first entered value is: 500
 
-4.84 kilograms is 2.2 in pounds.
+Your second entered value is: 5000
+
+A random number between 500 and 5000 is 1571
+
+7603.64 kilograms is 3456.2 in pounds.
 
 */
