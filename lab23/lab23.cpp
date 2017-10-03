@@ -12,7 +12,7 @@ using namespace std;
 //Swaping values function.
 void ValSwap(int& num_value1, int& num_value2){
     
-    //Stores the original values from number generator function into two new variable places.
+    //Stores the original inputted values into two new variable places.
     int x = num_value1;
     int y = num_value2;
     
@@ -22,24 +22,26 @@ void ValSwap(int& num_value1, int& num_value2){
     
     //An output that checks that the two values were swapped.
     cout << "Your first entered value is: " << num_value2 << endl << endl;
-    cout << "Your second entered value is: " << num_value1 << endl;
+    cout << "Your second entered value is: " << num_value1 << endl << endl;
     
     return;
 };
 
-//Random number generator function.
-void NumGenerator(int& num_value1, int& num_value2){
+//Random number generator function with pass by values to use in the next function.
+int NumGenerator(int& num_value1, int& num_value2){
     
-    //Generates a random number from the given inputs.
+    //Setting the random number seed.
     srand(time(0));
+    int num = 0;
     
-    cout << "A random number between " << num_value1 << " and " << num_value2 << " is " << (((rand() % ((num_value2 - num_value1) +1) )) + num_value1) << endl << endl;
-    
-    //Calls the ValSwap function.
+    //To generate a random number between 1 and 100.
+    num = ((rand() % ((num_value2 - num_value1) + 1) + num_value1));
+
+    //Calls the ValSwap function to change the two inputted values from int main.
     ValSwap(num_value1, num_value2);
     
-
-    return;
+    //Returning the computed value of the variable num.
+    return num;
 };
 
 
@@ -50,6 +52,7 @@ int main() {
     //Initializes the variables.
     int num_value1 = 0;
     int num_value2 = 0;
+    int rand_num = 0;
     
     //Asks for user input and stores them in the two values needed for the function.
     cout << "Please input a smaller integer value: ";
@@ -59,9 +62,12 @@ int main() {
     cout << endl;
     
     //Calls the NumGenerator function by using the inputted values.
-    NumGenerator(num_value1, num_value2);
-
+    rand_num = NumGenerator(num_value1, num_value2);
     
+    
+    //Outputs the random number from the random number function.
+    cout << "A random number between " << num_value2 << " and " << num_value1 << " is " << rand_num << endl << endl;
+
     
     return 0;
 }
