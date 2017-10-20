@@ -16,8 +16,11 @@ class Salary
         }
         //The constructor overload that accepts a starting value when the object is created for the class.
         Salary(double salary)
-        {
-            annual_ = salary;
+        {   if (salary < 0) {
+                annual_ = salary;
+        } else{
+            annual_ = 0;
+        }
         }
         //The function to set (mutator) the private variable if there is an input.
         void SetAnnualSalary(double salary)
