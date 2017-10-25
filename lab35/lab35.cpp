@@ -104,3 +104,42 @@ class TemperatureConverter {
             return;
         }
 };
+
+/*
+
+TEST:
+
+The temperature in Kelvin is: 0
+
+The temperature in Celsius is: -273.15
+
+The temperature in Fahrenheit is: 32
+
+The temperature in Kelvin is: 274
+
+The temperature in Celsius is: 0.85
+
+The temperature in Fahrenheit is: 525.2
+
+400.15
+The temperature in Kelvin is: 400.15
+
+The temperature in Celsius is: 127
+
+The temperature in Fahrenheit is: 752.27
+
+32
+The temperature in Kelvin is: 305.15
+
+The temperature in Celsius is: 32
+
+The temperature in Fahrenheit is: 581.27
+
+523.67
+The temperature in Kelvin is: 273.15
+
+The temperature in Celsius is: 0
+
+The temperature in Fahrenheit is: 523.67
+
+*/
