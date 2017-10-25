@@ -54,7 +54,7 @@ class TemperatureConverter {
             //Returns the Kelvin value only if greater than -273.15.
             if (kelvin_ > -273.15){
                 
-                return kelvin_;
+                return (kelvin_ - 273.15);
             }
             else {
                 PrintInvalidC();
@@ -73,7 +73,7 @@ class TemperatureConverter {
             //Returns the Kelvin value only if greater than -459.67.
             if (kelvin_ > -459.67){
                 
-                return kelvin_;
+                return ((kelvin_ * 9)/5 + 32);
             }
             else {
                 PrintInvalidF();
@@ -84,6 +84,8 @@ class TemperatureConverter {
         void PrintTemperatures(){
             
             cout << "The temperature in Kelvin is: " << kelvin_ << endl << endl;
+            cout << "The temperature in Celsius is: " << GetTempAsCelsius() << endl << endl;
+            cout << "The temperature in Fahrenheit is: " << GetTempAsFahrenheit() << endl << endl;
             
             return;
         }
