@@ -18,7 +18,6 @@ int main()
     int data_gb = 0;
     
     //Declaring and initializing variables to hold the values for each of the plan costs based on the user inputs from the above variables.
-    int att_upp_plan_cost = 0;
     int att_ucp_plan_cost = 0;
     int att_fp_plan_cost = 0;
     int ver_un_plan_cost = 0;
@@ -39,29 +38,6 @@ int main()
     cout << "Please enter the amount of data you wish to have on this plan: " << endl << endl;
     cin >> data_gb;
     cout << endl;
-    
-    
-    //If statements to determine for ATT Unlimited Plus Plan.
-    if ((num_phones <= 10) && (num_phones >= 1)){
-        
-        att_upp_plan_cost = att_upp_plan_cost + 90;
-        
-    }
-    if ((num_phones <= 10) && (num_phones >= 2)){
-        
-        att_upp_plan_cost = att_upp_plan_cost + 145;
-        
-    }
-    if ((num_phones <= 10) && (num_phones > 2)){
-        
-        att_upp_plan_cost = att_upp_plan_cost + ((num_phones - 2) * 20);
-        
-    }
-    if ((num_tablets >= 1)){
-        
-        att_upp_plan_cost = att_upp_plan_cost + (num_tablets * 10);
-        
-    }
     
     //If statements to determine for ATT Unlimited Choice Plan.
     
@@ -175,7 +151,6 @@ int main()
     //To print an itemized list of all the plans with the cost that would be associated based on user inputs
     
     cout << "The costs for all the plans with your requirements would be: " << endl << endl << endl;
-    cout << "ATT Unlimited Plus Plan: $" << att_upp_plan_cost <<" per month" << endl << endl;
     cout << "ATT Unlimited Choice Plan: $" << att_ucp_plan_cost << " per month" << endl << endl;
     cout << "ATT Family Plan: $" << att_fp_plan_cost << " per month" << endl << endl;
     cout << "Verison Unlimited Plan: $" << ver_un_plan_cost << " per month" << endl << endl;
@@ -211,8 +186,6 @@ Please enter the amount of data you wish to have on this plan:
 The costs for all the plans with your requirements would be: 
 
 
-ATT Unlimited Plus Plan: $235 per month
-
 ATT Unlimited Choice Plan: $175 per month
 
 ATT Family Plan: $100 per month
@@ -240,8 +213,6 @@ Please enter the amount of data you wish to have on this plan:
 The costs for all the plans with your requirements would be: 
 
 
-ATT Unlimited Plus Plan: $265 per month
-
 ATT Unlimited Choice Plan: $205 per month
 
 ATT Family Plan: $160 per month
@@ -267,8 +238,6 @@ Please enter the amount of data you wish to have on this plan:
 
 The costs for all the plans with your requirements would be: 
 
-
-ATT Unlimited Plus Plan: $90 per month
 
 ATT Unlimited Choice Plan: $60 per month
 

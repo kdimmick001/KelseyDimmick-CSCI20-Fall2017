@@ -11,26 +11,28 @@ using namespace std;
 
 //A classs to convert inputted temperatures to Kelvin.
 class TemperatureConverter {
-    
+    //A private variable fo kelvin.
     private:
         double kelvin_;
-    
+    //Public functions for the temperature converter class.
     public:
         //Default constructor to set Kelvin.
         TemperatureConverter(){
             kelvin_ = 0;
         }
         
-        //An overload constructor to accept an initial Kelvin value.
+        //An overload constructor to accept an initial Kelvin value and a condition if the input is outside a range.
         TemperatureConverter(double k) {
             if (k > 0) {
                 kelvin_ = k;
+            } else {
+                kelvin_ = 0;
             }
         }
         
-        //A mutator function for Kelvin.
+        //A mutator/set function for Kelvin.
         void SetTempFromKelvin(double k){
-            
+            //Sets the value only if greater than 0.
             if (k > 0){
                 kelvin_ = k;
             }
@@ -38,43 +40,45 @@ class TemperatureConverter {
             return;
             
         }
-        //A accessor function for Kelvin.
+        //A accessor/get function for Kelvin.
         double GetTempFromKelvin(){
             
             return kelvin_;
         }
         
-        //A mutator function for Celsius.
+        //A mutator/set function for Celsius.
         void SetTempFromCelsius(double c) {
             //Converts the inputted Celsius value to Kelvin.
             kelvin_ = c + 273.15;
         }
-        //A accessor function for Celsius.
+        //A accessor/get function for Celsius.
         double GetTempAsCelsius(){
             //Returns the Kelvin value only if greater than -273.15.
             if (kelvin_ > -273.15){
                 
                 return (kelvin_ - 273.15);
             }
+            //If condition fails then Print for invalid celsius.
             else {
                 PrintInvalidC();
             }
         }
         
-        //A mutator function for Fahrenheit.
+        //A mutator/set function for Fahrenheit.
         void SetTempFromFahrenheit(double f) {
             //Converts the inputted Fahrenheit value to Kelvin.
             kelvin_ = ((5*(f-32)/9) + 273.15);
             
             return;
         }
-        //A accessor function for Fahrenheit.
+        //A accessor/get function for Fahrenheit.
         double GetTempAsFahrenheit(){
             //Returns the Kelvin value only if greater than -459.67.
             if (kelvin_ > -459.67){
                 
                 return ((kelvin_ * 9)/5 + 32);
             }
+            //If condition fails then Print for invalid fahrenheit temperature.
             else {
                 PrintInvalidF();
             }

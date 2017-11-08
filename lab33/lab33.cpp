@@ -26,13 +26,7 @@ int main(){
     cout << "Enter your number guess between 1 and 50 that the computer is thinking: " << endl << endl;
     cin >> user_num;
     cout << endl << endl;
-    
-    //Checking if the game exit condition is true.
-    if (user_num == 0){
-        
-        return 0;
-    }
-    
+    while (user_num == user_num)
     //Checking to see if the user's guess is correct.
     if (user_num == comp_num){
         
@@ -69,22 +63,23 @@ int main(){
             
             //An if statement to output if the user's guess if too high.    
             if (user_num < comp_num){    
-                cout << endl << "OH! So SORRY! You should have guessed higher! You should have guessed: " << comp_num << endl << endl;
+                cout << endl << "OH! So SORRY! You should have guessed higher!" << endl << endl;
+                //Prompting the user to enter a new number.
+                cout << "Go ahead and try a different number...i'm sure you'll get it this time." << endl << endl;
+                cout << "And remember you can always his '0' to quit." << endl << endl;
+                cout << "Enter your number guess between 1 and 50 that the computer is thinking: " << endl << endl;
+                cin >> user_num;
             }
             //The else part that tells if the user's guess was too low.
             else {
-                cout << endl << "OH! So SORRY! You should have guessed lower! You should have guessed: " << comp_num << endl << endl;
+                cout << endl << "OH! So SORRY! You should have guessed lower!" << endl << endl;
+                //Prompting the user to enter a new number.
+                cout << "Go ahead and try a different number...i'm sure you'll get it this time." << endl << endl;
+                cout << "And remember you can always his '0' to quit." << endl << endl;
+                cout << "Enter your number guess between 1 and 50 that the computer is thinking: " << endl << endl;
+                cin >> user_num;
             }
             
-            //Creating another randomly generated computer number.
-            srand(time(0));
-            comp_num = ((rand()) % ((50 - 1) + 1) + 1);
-            
-            //Prompting the user to enter a new number.
-            cout << "Go ahead and try a different number...i'm sure you'll get it this time." << endl << endl;
-            cout << "And remember you can always his '0' to quit." << endl << endl;
-            cout << "Enter your number guess between 1 and 50 that the computer is thinking: " << endl << endl;
-            cin >> user_num;
             
     }
     
