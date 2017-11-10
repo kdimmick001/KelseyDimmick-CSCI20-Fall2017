@@ -157,6 +157,60 @@ You plan to order: Bears
 Your total comes out to: $5000
 Thank you for shopping at Oz!
 
-TEST 2:
+TEST 2:Welcome to Oz the online shopping network.
+Sponsored by: The Yellow Brick Road Engineering Firm -'If it's not yellow we didn't do it'.
+
+ITEMS: 
+----------------------------------------
+
+1. Lions
+     There are 1 in stock at  $1000 per item.
+
+2. Tigers
+     There are 2 in stock at  $2000 per item.
+
+3. Bears
+     There are 3 in stock at  $3000 per item.
+
+4. Flying Monkeys
+     There are 5 in stock at  $5000 per item.
+
+5. Lollipop Guild
+     There are 364 in stock at  $364000 per item.
+
+6. Kansas
+     There are 34 in stock at  $34000 per item.
+
+7. Red Slippers
+     There are 2 in stock at  $2000 per item.
+
+8. Water
+     There are 1 in stock at  $1000 per item.
+
+9. A Horse of Every Color
+     There are 7 in stock at  $7000 per item.
+
+10. Oil
+     There are 1 in stock at  $1000 per item.
+
+Please input the item numbers that you would like to purchase. Input '0' when you are ready to check out.
+1
+
+Please input the item numbers that you would like to purchase. Input '0' when you are ready to check out.
+1
+
+I'm sorry, but 0 are out of stock.
+Choose a different product.
+5
+
+Please input the item numbers that you would like to purchase. Input '0' when you are ready to check out.
+0
+
+You plan to order: Lions
+You plan to order: Lollipop Guild
+You plan to order: Lollipop Guild
+
+Your total comes out to: $364000
+Thank you for shopping at Oz!
 
 */
