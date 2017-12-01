@@ -20,7 +20,7 @@ int main() {
     nameLength = strlen(name); //Accessing the value of name to use to compute the length of name. 
                                 //But is just getting the length of the first element and not the whole array because of the pointer.
                                 //Cant get the length with the pointer pointing to one element.
-    cout << "Your word is " << name << endl; //Outputs when the first string is but first string is not defined.
+    cout << "Your word is " << name << endl; //Outputs when the first string is but first string is not defined. So change to name.
 
     if (nameLength<10) //If the length of the name is less than 10
     {                   //And while the dereference (the data to which the variable points) of the pointer variable is not equall to the null operator.
