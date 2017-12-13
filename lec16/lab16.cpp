@@ -8,11 +8,11 @@ using namespace std;
 */
 
 struct StockPortfolio {         //Making a struct for the StockPortfolio objects to use later in int main.
-    string stockName;
+    string stock_name;
     char sector;
-    double currSharePrice;
-    int numSharesOwned;
-    double totalShareValue;   //Declaring a variable to hold the total value of the shares owned.
+    double curr_share_price;
+    int num_shares_owned;
+    double total_share_value;   //Declaring a variable to hold the total value of the shares owned.
 };
 
 int main () {
@@ -24,188 +24,191 @@ int main () {
     StockPortfolio company5;
     StockPortfolio company6;
     
-    company1.stockName;         //Ties all the declared objects in the struct StockPortfolio to each company.
+    company1.stock_name;         //Ties all the declared objects in the struct StockPortfolio to each company.
     company1.sector;
-    company1.currSharePrice;
-    company1.numSharesOwned;
-    company1.totalShareValue;
+    company1.curr_share_price;
+    company1.num_shares_owned;
+    company1.total_share_value;
     
-    company2.stockName;        
+    company2.stock_name;      
     company2.sector;
-    company2.currSharePrice;
-    company2.numSharesOwned;
-    company2.totalShareValue;
+    company2.curr_share_price;
+    company2.num_shares_owned;
+    company2.total_share_value;
     
-    company3.stockName;        
+    company3.stock_name;        
     company3.sector;
-    company3.currSharePrice;
-    company3.numSharesOwned;
-    company3.totalShareValue;
+    company3.curr_share_price;
+    company3.num_shares_owned;
+    company3.total_share_value;
     
-    company4.stockName;        
+    company4.stock_name;        
     company4.sector;
-    company4.currSharePrice;
-    company4.numSharesOwned;
-    company4.totalShareValue;
+    company4.curr_share_price;
+    company4.num_shares_owned;
+    company4.total_share_value;
     
-    company5.stockName;        
+    company5.stock_name;        
     company5.sector;
-    company5.currSharePrice;
-    company5.numSharesOwned;
-    company5.totalShareValue;
+    company5.curr_share_price;
+    company5.num_shares_owned;
+    company5.total_share_value;
     
-    company6.stockName;        
+    company6.stock_name;        
     company6.sector;
-    company6.currSharePrice;
-    company6.numSharesOwned;
-    company6.totalShareValue;
+    company6.curr_share_price;
+    company6.num_shares_owned;
+    company6.total_share_value;
     
 
     cout << "COMPANY 1" << endl;
     cout << "_________" << endl << endl;
     cout << "Please enter the stock name for the first company: ";      //Prompting the user to input the values.
-    cin >> company1.stockName;
+    cin >> company1.stock_name;
     cout << endl;
     cout << "Please enter the sector letter for the first company: ";
     cin >> company1.sector;
     cout << endl;
     cout << "Please enter the current price of the stock share for the first company: ";
-    cin >> company1.currSharePrice;
+    cin >> company1.curr_share_price;
     cout << endl;
     cout << "Please enter the number of shares owned from the first company: ";
-    cin >> company1.numSharesOwned;
+    cin >> company1.num_shares_owned;
     cout << endl;
     
     cout << "COMPANY 2" << endl;
     cout << "_________" << endl << endl;
     cout << "Please enter the stock name for the second company: ";      
-    cin >> company2.stockName;
+    cin >> company2.stock_name;
     cout << endl;
     cout << "Please enter the sector letter for the second company: ";
     cin >> company2.sector;
     cout << endl;
     cout << "Please enter the current price of the stock share for the second company: ";
-    cin >> company2.currSharePrice;
+    cin >> company2.curr_share_price;
     cout << endl;
     cout << "Please enter the number of shares owned from the second company: ";
-    cin >> company2.numSharesOwned;
+    cin >> company2.num_shares_owned;
     cout << endl;
     
     cout << "COMPANY 3" << endl;
     cout << "_________" << endl << endl;
     cout << "Please enter the stock name for the third company: ";     
-    cin >> company3.stockName;
+    cin >> company3.stock_name;
     cout << endl;
     cout << "Please enter the sector letter for the third company: ";
     cin >> company3.sector;
     cout << endl;
     cout << "Please enter the current price of the stock share for the third company: ";
-    cin >> company3.currSharePrice;
+    cin >> company3.curr_share_price;
     cout << endl;
     cout << "Please enter the number of shares owned from the third company: ";
-    cin >> company3.numSharesOwned;
+    cin >> company3.num_shares_owned;
     cout << endl;
     
     cout << "COMPANY 4" << endl;
     cout << "_________" << endl << endl;
     cout << "Please enter the stock name for the fourth company: ";  
-    cin >> company4.stockName;
+    cin >> company4.stock_name;
     cout << endl;
     cout << "Please enter the sector letter for the fourth company: ";
     cin >> company4.sector;
     cout << endl;
     cout << "Please enter the current price of the stock share for the fourth company: ";
-    cin >> company4.currSharePrice;
+    cin >> company4.curr_share_price;
     cout << endl;
     cout << "Please enter the number of shares owned from the fourth company: ";
-    cin >> company4.numSharesOwned;
+    cin >> company4.num_shares_owned;
     cout << endl;
     
     cout << "COMPANY 5" << endl;
     cout << "_________" << endl << endl;
     cout << "Please enter the stock name for the fifth company: ";  
-    cin >> company5.stockName;
+    cin >> company5.stock_name;
     cout << endl;
     cout << "Please enter the sector letter for the fifth company: ";
     cin >> company5.sector;
     cout << endl;
     cout << "Please enter the current price of the stock share for the fifth company: ";
-    cin >> company5.currSharePrice;
+    cin >> company5.curr_share_price;
     cout << endl;
     cout << "Please enter the number of shares owned from the fifth company: ";
-    cin >> company5.numSharesOwned;
+    cin >> company5.num_shares_owned;
     cout << endl;
     
     cout << "COMPANY 6" << endl;
     cout << "_________" << endl << endl;
     cout << "Please enter the stock name for the sixth company: ";  
-    cin >> company6.stockName;
+    cin >> company6.stock_name;
     cout << endl;
     cout << "Please enter the sector letter for the sixth company: ";
     cin >> company6.sector;
     cout << endl;
     cout << "Please enter the current price of the stock share for the sixth company: ";
-    cin >> company6.currSharePrice;
+    cin >> company6.curr_share_price;
     cout << endl;
     cout << "Please enter the number of shares owned from the sixth company: ";
-    cin >> company6.numSharesOwned;
+    cin >> company6.num_shares_owned;
     cout << endl;
     
     
-    company1.totalShareValue = (company1.numSharesOwned * company1.currSharePrice); 
-    company2.totalShareValue = (company2.numSharesOwned * company2.currSharePrice); 
-    company3.totalShareValue = (company3.numSharesOwned * company3.currSharePrice); 
-    company4.totalShareValue = (company4.numSharesOwned * company4.currSharePrice); 
-    company5.totalShareValue = (company5.numSharesOwned * company5.currSharePrice); 
-    company6.totalShareValue = (company6.numSharesOwned * company6.currSharePrice); 
+    company1.total_share_value = (company1.num_shares_owned * company1.curr_share_price); 
+    company2.total_share_value = (company2.num_shares_owned * company2.curr_share_price); 
+    company3.total_share_value = (company3.num_shares_owned * company3.curr_share_price); 
+    company4.total_share_value = (company4.num_shares_owned * company4.curr_share_price); 
+    company5.total_share_value = (company5.num_shares_owned * company5.curr_share_price); 
+    company6.total_share_value = (company6.num_shares_owned * company6.curr_share_price); 
 
 
     cout << "COMPANY 1" << endl;
     cout << "_________" << endl << endl;
     cout << "Stock Name     No. of Shares     Current Value     Total Value" << endl;   //Creating a display to show the user all the collected data.
     cout << "-----------    -------------     -------------     -----------" << endl;
-    cout << company1.stockName << "            " << company1.numSharesOwned << "                " << company1.currSharePrice << "                " << company1.totalShareValue << endl;
-    cout << "Total Portfolio: $" << company1.totalShareValue << endl;
+    cout << company1.stock_name << "            " << company1.num_shares_owned << "                " << company1.curr_share_price << "                " << company1.total_share_value << endl;
+    cout << "Total Portfolio: $" << company1.total_share_value << endl;
     cout << endl;
 
     cout << "COMPANY 2" << endl;
     cout << "_________" << endl << endl;
     cout << "Stock Name     No. of Shares     Current Value     Total Value" << endl;   
     cout << "-----------    -------------     -------------     -----------" << endl;
-    cout << company2.stockName << "            " << company2.numSharesOwned << "                " << company2.currSharePrice << "                " << company2.totalShareValue << endl;
-    cout << "Total Portfolio: $" << company2.totalShareValue << endl;
+    cout << company2.stock_name << "            " << company2.num_shares_owned << "                " << company2.curr_share_price << "                " << company2.total_share_value << endl;
+    cout << "Total Portfolio: $" << company2.total_share_value << endl;
     cout << endl;
 
     cout << "COMPANY 3" << endl;
     cout << "_________" << endl << endl;    
     cout << "Stock Name     No. of Shares     Current Value     Total Value" << endl;   
     cout << "-----------    -------------     -------------     -----------" << endl;
-    cout << company3.stockName << "            " << company3.numSharesOwned << "                " << company3.currSharePrice << "                " << company3.totalShareValue << endl;
-    cout << "Total Portfolio: $" << company3.totalShareValue << endl;
+    cout << company3.stock_name << "            " << company3.num_shares_owned << "                " << company3.curr_share_price << "                " << company3.total_share_value << endl;
+    cout << "Total Portfolio: $" << company3.total_share_value << endl;
     cout << endl;
     
     cout << "COMPANY 4" << endl;
     cout << "_________" << endl << endl;     
     cout << "Stock Name     No. of Shares     Current Value     Total Value" << endl;   
     cout << "-----------    -------------     -------------     -----------" << endl;
-    cout << company4.stockName << "            " << company4.numSharesOwned << "                " << company4.currSharePrice << "                " << company4.totalShareValue << endl;
-    cout << "Total Portfolio: $" << company4.totalShareValue << endl;
+    cout << company4.stock_name << "            " << company4.num_shares_owned << "                " << company4.curr_share_price << "                " << company4.total_share_value << endl;
+    cout << "Total Portfolio: $" << company4.total_share_value << endl;
     cout << endl;
     
     cout << "COMPANY 5" << endl;
     cout << "_________" << endl << endl;
     cout << "Stock Name     No. of Shares     Current Value     Total Value" << endl;   
     cout << "-----------    -------------     -------------     -----------" << endl;
-    cout << company5.stockName << "            " << company5.numSharesOwned << "                " << company5.currSharePrice << "                " << company5.totalShareValue << endl;
-    cout << "Total Portfolio: $" << company5.totalShareValue << endl;
+    cout << company5.stock_name << "            " << company5.num_shares_owned << "                " << company5.curr_share_price << "                " << company5.total_share_value << endl;
+    cout << "Total Portfolio: $" << company5.total_share_value << endl;
     cout << endl;
     
     cout << "COMPANY 6" << endl;
     cout << "_________" << endl << endl;
     cout << "Stock Name     No. of Shares     Current Value     Total Value" << endl;   
     cout << "-----------    -------------     -------------     -----------" << endl;
-    cout << company6.stockName << "            " << company6.numSharesOwned << "                " << company6.currSharePrice << "                " << company6.totalShareValue << endl;
-    cout << "Total Portfolio: $" << company6.totalShareValue << endl;
+    cout << company6.stock_name << "            " << company6.num_shares_owned << "                " << company6.curr_share_price << "                " << company6.total_share_value << endl;
+    cout << "Total Portfolio: $" << company6.total_share_value << endl;
+    cout << endl;
+    
+    cout << "Total combined stock value: " << company1.total_share_value + company2.total_share_value + company3.total_share_value + company4.total_share_value + company5.total_share_value + company6.total_share_value << endl;
     cout << endl;
 
     

@@ -1,0 +1,7 @@
+Enchanted
+Cursed
+Normal
+Overpowered
+Poisoned
+Broken
+Strong

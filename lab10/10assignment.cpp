@@ -22,10 +22,10 @@ int main (){
     //Referencing the struct in the int main().
     Catapult jetFighter;
     
-    jetFighter.speed;
-    jetFighter.distance;
-    jetFighter.timeSeconds;
-    jetFighter.acceleration;
+    //jetFighter.speed;
+    //jetFighter.distance;
+    //jetFighter.timeSeconds;
+    //jetFighter.acceleration;
     
     //Input for the speed.
     cout << "Enter the take-off speed in km/hr: ";
@@ -47,7 +47,7 @@ int main (){
     jetFighter.acceleration = (2 * jetFighter.distance) / (jetFighter.timeSeconds * jetFighter.timeSeconds); 
     
     //Output results.
-    cout << "The acceleration of the jet fighter is: " << jetFighter.acceleration << " (m/s^2)";
+    cout << "The acceleration of the jet fighter is: " << jetFighter.acceleration << " (m/s^2)" << endl << endl;
     cout << "The time for the jet fighter to accelerate is: " << jetFighter.timeSeconds << " (s)";
     
     return 0;
